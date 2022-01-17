@@ -84,3 +84,75 @@ div:target{
 p:target{
     border:1px solid red;
 }
+
+/* border */
+.borderone{
+    border: 3px dashed black;
+}
+
+.bordertwo{
+    border-bottom: 3px double green;
+}
+
+.borderstyle{
+    /* border-style: solid dotted double groove; */
+    /* T R B L */
+    /* border-style: solid dotted double; */
+    /* T / L&R / B */
+    border-style: solid dashed;
+    /* T&B / L&R */
+}
+
+.borderwidth{
+    border-width: 5px;
+    border-style: solid;
+}
+
+/* Margin */
+
+.margin{
+    border: 1px solid;
+    margin: 40px;
+}
+
+.marginmix{
+    border: 1px solid black;
+    margin-left: 60px;
+}
+
+/* Padding */
+
+.padding{
+    padding: 50px 0px 0px 60px;
+    border: 1px solid black;
+}
+
+/* Layout */
+
+.inline{
+    border: 1px solid red;
+    width: 400px;
+    display: block;
+
+}
+
+.block{
+    border: 1px solid green;
+    width: 400px;
+    height: 80px;
+    display: inline-block;
+}
+
+/* float */
+div.float_left img{
+    width: 40%;
+    float: left;
+}
+.clear{
+    clear: both;
+}
+div.float_right img{
+    width: 40%;
+    float: right;
+}
+
