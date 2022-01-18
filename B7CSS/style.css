@@ -156,3 +156,94 @@ div.float_right img{
     float: right;
 }
 
+/* grid */
+
+div.gridone div,div.gridtwo div,div.gridthree div,div.gridfour div,div.gridfive div,div.gridsix div{
+    text-align:center;
+    color: white;
+    padding: 20px;
+}
+
+
+div.gridone,div.gridtwo,div.gridthree,div.gridfour,div.gridfive,div.gridsix{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+div.gridtwo{
+    grid-column-gap: 40px;
+}
+
+div.gridthree{
+    grid-row-gap: 40px;
+}
+
+div.gridfour{
+    grid-gap: 40px;
+}
+
+.gridaddcolumn{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.gridaddrow{
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+/* position */
+.relativeparent{
+    border: 1px solid black;
+    width: 1000px;
+    height: 600px;
+}
+
+.relative{
+    border: 1px solid red;
+    width: 500px;
+    height: 300px;
+    position: relative;
+    top: 80px;
+    left: 190px;
+}
+
+.absoluteparent{
+    border: 1px solid black;
+    width: 1000px;
+    height: 600px;
+    position: relative;
+}
+
+.absolute{
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    border: 1px solid yellow;
+    width: 500px;
+    height: 300px;
+}
+
+.fixed{
+    position: fixed;
+    top: 50px;
+    left: 1000px;
+}
+
+/* Online */
+.font{
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Stick', sans-serif;
+font-family: 'The Nautigal', cursive;
+}
+
+/* Offline */
+@font-face{
+    src:url(font/Josefin_Sans/JosefinSans-VariableFont_wght.ttf);
+    font-family: a;
+}
+
+.offline{
+    font-family: a;
+}
+
